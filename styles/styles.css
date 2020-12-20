@@ -1,0 +1,17 @@
+.items {
+    margin-right: 15px;
+    list-style: none;
+
+}
+
+.list {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+
+}
+
+.images {
+
+    width: 500px;
+}
