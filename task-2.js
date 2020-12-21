@@ -7,8 +7,7 @@ const ingredients = [
   "Приправы",
 ];
 
-const listIngredients = document.createElement("ul");
-listIngredients.setAttribute("id", "ingredients");
+const listIngredients = document.querySelector("#ingredients");
 console.log(listIngredients);
 
 const result = ingredients.forEach((createItemIngreds) => {
@@ -16,5 +15,3 @@ const result = ingredients.forEach((createItemIngreds) => {
   createItemIngred.textContent = createItemIngreds;
   listIngredients.appendChild(createItemIngred);
 });
-
-document.body.appendChild(listIngredients);

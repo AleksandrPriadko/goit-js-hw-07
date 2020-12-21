@@ -1,12 +1,18 @@
-let counterValue = document.querySelector('#value');
-const counterValues = counterValue.textContent;
-counterValue.innerHTML = counterValues;
-console.log(counterValues)
+const counterValues = document.querySelector("#value");
+let counterValue = Number(counterValues.textContent);
 
-const increment = () => {
-    counterValue.innerHTML = 0 + 1;
-};
-const btnRef = document.querySelector('[data-action="increment"]');
+function increment() {
+    counterValue += 1;
+    counterValues.innerHTML = counterValue;
+}
 
+function decrement() {
+    counterValue -= 1;
+    counterValues.innerHTML = counterValue;
+}
 
-btnRef.addEventListener('click', increment)
+const btnmaxRef = document.querySelector('[data-action="increment"]');
+const btnminRef = document.querySelector('[data-action="decrement"]');
+
+btnmaxRef.addEventListener("click", increment);
+btnminRef.addEventListener("click", decrement);

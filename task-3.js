@@ -12,12 +12,9 @@ const images = [{
     },
 ];
 
-const galleryRef = document.createElement('ul');
-galleryRef.setAttribute('id', 'gallery');
+const galleryRef = document.querySelector('#gallery');
 galleryRef.classList.add('list')
 console.log(galleryRef);
 const itemsGalleryRef = images.forEach(itemsGallerysRef => {
     galleryRef.insertAdjacentHTML('afterbegin', `<li class='items'><img class='images' src='${itemsGallerysRef.url}' alt='${itemsGallerysRef.alt}'></li>`)
 });
-
-document.body.appendChild(galleryRef);
