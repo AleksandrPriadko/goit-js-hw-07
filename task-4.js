@@ -1,5 +1,6 @@
 const counterValues = document.querySelector("#value");
 let counterValue = Number(counterValues.textContent);
+//console.log(typeof counterValue)
 
 function increment() {
     counterValue += 1;
